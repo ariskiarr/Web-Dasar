@@ -1,33 +1,16 @@
-
-
-/* ================================FONT=============================== */
-/* font-family: menetapkan jenis font yang akan diterapkan pada target.
-font-size: menentukan ukuran pada teks.
-font-weight: menentukan ketebalan pada teks. 
-font-style: menetapkan styling yang diterapkan pada teks.
-font-variant: menentukan teks untuk menggunakan gaya small caps (huruf kapital kecil).
-font: sebagai shorthand dari properti font yang ada. */
-
-/* jenis font
-Serif: jenis font yang memiliki runcing pada garis akhir karakternya. Times New Roman merupakan salah satu jenis serif font.
-Sans-serif: jenis font yang tidak meruncing pada garis akhir karakternya. Contohnya, “Open Sans”, “Fira Sans” dan lainnya.
-Monospace: jenis font yang memiliki nilai lebar tiap karakternya sama. Consolas merupakan salah satu jenisnya.
-Cursive: jenis font yang tampak seperti handwriting atau hasil tulisan tangan.
-Fantasy: jenis font yang merepresentasikan karakteristik yang menyenangkan.
-System-ui: jika menerapkan nilai ini maka font yang diterapkan akan sama seperti font yang digunakan pada sistem operasi kita.
-Math: jenis font yang digunakan untuk penulisan rumus-rumus matematika.
-Emoji: jenis font yang digunakan untuk menampilkan emoji.
-Fangsong: jenis font yang menampilkan gaya penulisan Chinese.
-
-*/
-
-
-
-
 body {
     /* font-family: sans-serif; */
     font-family: "Quicksand", sans-serif;
+
+    margin: 0;
+    padding: 0;
 }
+
+ main {
+    padding: 20px;
+ }
+
+
 
 h2 ,h3{
     color: #00a2c6;
@@ -42,9 +25,7 @@ footer{
     color: white;
     background-color:#00a2c6;
     text-align: center;
-    font-weight: bold;
-    
-        
+    font-weight: bold;        
 }
 /* 
  p::first-letter{
@@ -57,6 +38,18 @@ nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration:none;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
 }
 
 nav a:hover {
@@ -65,4 +58,30 @@ nav a:hover {
 
 .profile header{
     text-align: center;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profilImg{
+    width: 200px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
 }
